@@ -1,0 +1,307 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-06T07:32:27.138Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14881062991,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4787607065,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.secondBefore()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate the forgot Password with invalid email id",
+        "description": "",
+        "id": "validate-the-forgot-password-functionality;validate-the-forgot-password-with-invalid-email-id",
+        "after": [
+          {
+            "result": {
+              "duration": 285626953,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.thirdAfter(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 348053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScnario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2137187951,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.firstAfter()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4682211,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should launch chrome and load the Url",
+            "match": {
+              "location": "LoginStepDefinition.user_should_launch_chrome_and_load_the_Url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 520127977,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should click the forgot password link",
+            "match": {
+              "location": "ForgotStepDefinition.user_should_click_the_forgot_password_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1288739355,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should input ivalid email id",
+            "match": {
+              "location": "ForgotStepDefinition.user_should_input_ivalid_email_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168095099,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should click the Send button",
+            "match": {
+              "location": "ForgotStepDefinition.user_should_click_the_Send_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 733046561,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should navigate to Home page",
+            "match": {
+              "location": "ForgotStepDefinition.user_should_navigate_to_Home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@testingforgot"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the forgot password functionality",
+    "description": "",
+    "id": "validate-the-forgot-password-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/ForgotPassword.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4107031,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should launch chrome and load the Url",
+            "match": {
+              "location": "LoginStepDefinition.user_should_launch_chrome_and_load_the_Url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-06T07:32:52.024Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8666738806,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2932282182,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.secondBefore()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate Login funtionality with valid username and invalid Password",
+        "description": "",
+        "id": "to-validate-the-login-functionality;validate-login-funtionality-with-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 283796996,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.thirdAfter(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 155285,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.afterScnario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2141059376,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.firstAfter()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 895720950,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should pass valid username and invalid Password",
+            "match": {
+              "location": "LoginStepDefinition.user_should_pass_valid_username_and_invalid_Password(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "sharm@gmail.com",
+                  "Sharmi@123",
+                  "jshi@gmail.com",
+                  "Jershi@377",
+                  "mani",
+                  "Mani@334"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 225505626,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should click the login button",
+            "match": {
+              "location": "LoginStepDefinition.user_should_click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11168730519,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should navigate to incorrect credential page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_navigate_to_incorrect_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@testing"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the login functionality",
+    "description": "",
+    "id": "to-validate-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/Login.feature",
+    "tags": [
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

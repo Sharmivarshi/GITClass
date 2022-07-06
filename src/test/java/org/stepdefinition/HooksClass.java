@@ -2,6 +2,8 @@ package org.stepdefinition;
 
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.utilities.BaseClass;
 import org.utilities.LoginPojo;
 
@@ -30,8 +32,17 @@ public class HooksClass extends BaseClass {
 		jsClick(l.getClkLogin());
 
 	}
+	@After(order=3)
+	public void thirdAfter(Scenario s) throws IOException {
+
+		String name = s.getName();
+		String fileName = name.replace(" ", "_");
+		screenshot(fileName);	
+
+		
+	}
 	@After(order=1)
-	public void thirdAfter() {
+	public void firstAfter() {
 		
 		winClose();
 
@@ -42,10 +53,12 @@ public class HooksClass extends BaseClass {
 	
 	@After(order=2)
 	public void afterScnario(Scenario s) throws IOException {
-		
-		String name = s.getName();
-		String fileName = name.replace(" ", "_");
-		screenshot(fileName);
+
+		if (s.isFailed()) {
+			TakesScreenshot tk = (TakesScreenshot)driver;
+			byte[] screen = tk.getScreenshotAs(OutputType.BYTES);
+			s.embed(screen, "image/png");
+		}
 		System.out.println("Program Tested Successfully");
 		
 		

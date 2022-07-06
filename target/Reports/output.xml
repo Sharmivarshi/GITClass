@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="51.228347">
+<testcase classname="Validate the forgot password functionality" name="Validate the forgot Password with invalid email id" time="24.867764">
+<system-out><![CDATA[Given User should launch chrome and load the Url............................passed
+When User should click the forgot password link.............................passed
+And User should input ivalid email id.......................................passed
+And User should click the Send button.......................................passed
+Then User should navigate to Home page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality" name="Validate Login funtionality with valid username and invalid Password" time="26.360583">
+<system-out><![CDATA[Given User should launch chrome and load the Url............................passed
+When User should pass valid username and invalid Password...................passed
+And User should click the login button......................................passed
+Then user should navigate to incorrect credential page......................passed
+]]></system-out>
+</testcase>
+</testsuite>
